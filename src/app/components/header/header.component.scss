@@ -1,0 +1,117 @@
+.menu-wrapper {
+  transition: background-color 0.2s linear;
+  z-index: 99 !important;
+  background-color: #221c5a;
+  width: 100% !important;
+  top: 0;
+  position: fixed;
+}
+
+#header-main-menu {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-menu {
+  li {
+    display: inline;
+    padding: 0 0.5em;
+  }
+}
+
+.main-menu.sm-clean {
+  background-color: transparent;
+}
+
+.main-menu.sm-clean a {
+  font-size: 13px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 400;
+  transition: color 0.2s linear;
+  text-transform: uppercase;
+  letter-spacing: 0.03cm;
+}
+
+.main-menu.sm-clean .sub-menu a {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.sm-clean .current_page_item a {
+  color: #fff !important;
+}
+
+.main-menu.sm-clean a:hover {
+  color: #fff !important;
+}
+
+.sm-clean li.active a {
+  color: #fff !important;
+}
+
+.mob-menu {
+  display: none;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: color 0.2s linear;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 925px) {
+  .main-menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .mob-menu {
+    display: block;
+  }
+
+  .mob-menu:hover {
+    cursor: pointer;
+  }
+
+  .main-menu {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    display: none;
+
+    li {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  .main-menu ul {
+    width: 12em; /* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+  }
+
+  .sm-clean a,
+  .sm-clean a:hover,
+  .sm-clean a:focus,
+  .sm-clean a:active {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-menu.sm-clean a {
+    line-height: 24px;
+  }
+
+  .main-menu.sm-clean .sub-menu a {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
+}

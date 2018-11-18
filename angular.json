@@ -17,6 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
+            "buildOptimizer": true,
             "outputPath": "dist/ng-thanik",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,7 +29,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           },

@@ -1,0 +1,10 @@
+<!-- Menu -->
+<sass-helper></sass-helper>
+<div class="menu-wrapper center-relative" [style.backgroundColor]="fragmentColor">
+  <nav id="header-main-menu">
+    <div class="mob-menu" (click)="toggleMenu()">MENU</div>
+    <ul class="main-menu sm sm-clean" (click)="onItemClick()">
+      <li *ngFor="let fragment of fragments"><a [routerLink]="['/pages']" [fragment]="fragment.id">{{fragment.label}}</a></li>
+    </ul>
+  </nav>
+</div>
